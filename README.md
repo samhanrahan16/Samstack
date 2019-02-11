@@ -6,6 +6,9 @@ within the parameter file. An example Parameter file Sams_paramters.cfg can be f
 redshift and multiple maps can be stacked at once. It is important that only one catalog can be stacked at a time and this should be 
 specified in the parameter file. See the run_samstack notebook as an example on how to run the outputs of samstack.
 
+To run samsack, it needs to be initialised with the path to the parameter file. The methods then require the paths of the file where you
+would like to save the stacked outputs.
+
 For analysis of the stacked results the file contains a SED fitter. This can be used to fit a modified blackbody function to your stacked 
 fluxes for further analysis of them.
 
