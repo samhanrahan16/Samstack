@@ -43,7 +43,7 @@ In order to test the stacking is working correctly, a fake map where the fluxes 
 
 
 # Future Work
-The catalog can currently be only binned by mass and not redshift. We are working on including this,
+The catalog can currently only be binned by mass and not redshift. We are working on including this.
 
 We are currently working on adding a bootstrap technique to the stacking, to provide an error on the stacked flux.
 
