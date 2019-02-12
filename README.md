@@ -6,7 +6,7 @@ and images of 'stacked galaxy'. It also contains an SED fitter for analysis of t
 
 # Setup
 Ensure the following repositories are installed:
-Markup: -numpy
+-numpy
 -scipy
 -matplotlib
 -astropy
