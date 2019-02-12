@@ -40,8 +40,8 @@ We are currently working on adding a bootstrap technique to the stacking, to pro
 
 # People
 
--Sam Hanrahan(Imperial College London)
--James Harrison(Imperial College London)
+* Sam Hanrahan(Imperial College London)
+* James Harrison(Imperial College London)
 
 # Credits
 
