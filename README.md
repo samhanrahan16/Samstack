@@ -23,7 +23,8 @@ names,paths and file names. Follow the example file provided 'Sams_parameters_ex
 The data can be separated into mass bins, by specyfing the bin edges in the parameter file.
 
 The samstack class should be initialised with the path to the parameter file. The seperate methods can then be run to produce the
-stacking output. Follow the example notebook 'Run_samstack_example' to see how it works, using the map and catalog in the 
+stacking output, they take the path to location where you would like the results to be saved as an argument (if the path doesn't already 
+exist the code will create it). Follow the example notebook 'Run_samstack_example' to see how it works, using the map and catalog in the 
 'example_data' folder.
 
 # Results
