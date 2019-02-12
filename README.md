@@ -32,7 +32,14 @@ of their mass bin.
 
 Images of the 'stacked galaxy' are also saved into the path provided.
 
-The modified_bb class in the 'SED_fitter' file can be used to fit a SED to the stacked flux data from the stacking.
+# Additional Features
+
+The modified_bb class in the 'SED_fitter' file can be used to fit a modified blackcckbody spectrum to the flux densities from the 
+stacking, using MCMC from emcee.
+
+In order to test the stacking is working correctly, a fake map where the fluxes are all known can be created using the 
+'false_map' file. Use the 'create_fake_map' notebook as an example on how to do this.
+
 
 # Future Work
 The catalog can currently be only binned by mass and not redshift. We are working on including this,
