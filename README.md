@@ -6,12 +6,12 @@ and images of 'stacked galaxy'. It also contains an SED fitter for analysis of t
 
 # Setup
 Ensure the following repositories are installed:
--numpy
--scipy
--matplotlib
--astropy
--emcee
--corner
+* numpy
+* scipy
+* matplotlib
+* astropy
+* emcee
+* corner
 
 The catalogs need to be in a csv format and must contain columns with the RA,DEC,redshift,Mass of the galaxies (in our example we 
 use i band magnitude as a substitute for mass).
