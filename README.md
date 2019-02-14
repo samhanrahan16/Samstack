@@ -4,6 +4,8 @@ A stacking code based on Marco Viero's simstack code. It is a simplifed and more
 The samstack class will run stacking of a single catalog on several different skymaps. It will produce files of the stacked fluxes 
 and images of 'stacked galaxy'. It also contains a SED fitter for analysis of the stacked fluxes.
 
+For help with issues please contact samuel.hanrahan15@imperial.ac.uk
+
 # Setup
 Ensure the following repositories are installed:
 * Python 2
@@ -56,6 +58,8 @@ We are currently working on adding a bootstrap technique to the stacking, to pro
 # Credits
 
 This code is based upon the work of Marco Viero's 'simstack' see viero et. al. (2013).
+
+If you use this code in your research please reference or names.
 
 
 
