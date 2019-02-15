@@ -57,7 +57,7 @@ class SED:
 
         self.Tinit = T0 + 10*np.random.random(nwalkers)
         self.betainit = beta0 + 0.3*np.random.random(nwalkers)
-        self.log_Ainit = log_A + 2*np.random.random(nwalkers)
+        self.log_Ainit = log_A0 + 2*np.random.random(nwalkers)
 
     def run_MCMC(self):
 
