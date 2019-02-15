@@ -19,7 +19,7 @@ def bb(wave,T,beta,A):
 
     return flux
 
-def lnlike(theta,flux,error):
+def lnlike(theta,wave,flux,error):
     T,beta,log_A = theta
     ll = 0
     diff = flux - bb(wave,T,beta,10**log_A)
@@ -35,11 +35,11 @@ def lnprior(theta):
     return -np.inf
 
 
-def lnprob(theta,flux,error):
+def lnprob(theta,wave,flux,error):
     lp = lnprior(theta)
     if not np.isfinite(lp):
         return -np.inf
-    return lp + lnlike(theta,flux,error)
+    return lp + lnlike(theta,wave,flux,error)
 
 
 class SED:
@@ -63,7 +63,7 @@ class SED:
 
         pos = [np.array(x) for x in zip(self.Tinit,self.betainit,self.log_Ainit)]
 
-        sampler = emcee.EnsembleSampler(self.nwalkers,self.ndim,lnprob,args=(self.fluxes,self.errors))
+        sampler = emcee.EnsembleSampler(self.nwalkers,self.ndim,lnprob,args=(self.waves,self.fluxes,self.errors))
 
         sampler.run_mcmc(pos,600)
 
@@ -88,7 +88,7 @@ class SED:
                     vals.append(val)
                 plt.plot(range(1,601,1),vals)
                 plt.xlabel('Step')
-                plt.ylabel(labels[x])
+                plt.ylabel(labels[x+1])
             plt.show()
 
         fig = corner.corner(samples,labels=['$T$',r'$\beta$',r'$log{A}$'])
