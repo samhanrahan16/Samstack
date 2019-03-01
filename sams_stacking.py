@@ -59,7 +59,7 @@ class samstack:
         radius = 1.0
 
         for iwv in range(nwv):
-            print(('stacking '+ self.cat_name + ' ' + list(map_library.keys())[iwv]))
+            print 'stacking '+ self.cat_name + ' ' + list(map_library.keys())[iwv]
 
             map_key = list(map_library.keys())[iwv]
             cmap = map_library[map_key].cmap
@@ -289,7 +289,7 @@ class samstack:
         plot_matrices_all_wvs_noise = {}
 
         for iwv in range(nwv):
-            print(('stacking ' + self.cat_name + ' ' + list(map_library.keys())[iwv]))
+            print 'stacking ' + self.cat_name + ' ' + list(map_library.keys())[iwv]
 
             map_key = list(map_library.keys())[iwv]
             cmap = map_library[map_key].cmap
@@ -495,7 +495,7 @@ class samstack:
         stacks_all_wvs = {}
 
         for iwv in range(nwv):
-            print(('stacking ' + self.cat_name + '_' + list(map_library.keys())[iwv]))
+            print 'stacking ' + self.cat_name + '_' + list(map_library.keys())[iwv]
 
             map_key = list(map_library.keys())[iwv]
             cmap = map_library[map_key].cmap
